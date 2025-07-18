@@ -29,5 +29,5 @@ table-games-dashboard/
 
 ## 🧪 Demo
 
-![Dashboard Preview](images/dashboard-preview.png)
+![Dashboard Preview](images/dashboard-preview.PNG)
 
