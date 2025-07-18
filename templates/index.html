@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Games Dashboard</title>
+    <!-- ✅ Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">🎲 Table Games Dashboard  🧩</h1>
+
+        <form method="get" class="row g-3 justify-content-center mb-4">
+            <div class="col-md-3">
+                <label for="region" class="form-label">Region</label>
+                <select name="region" class="form-select">
+                    {% for region in all_regions %}
+                        <option value="{{ region }}" {% if region == selected_region %}selected{% endif %}>{{ region }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="gametype" class="form-label">Game Type</label>
+                <select name="gametype" class="form-select">
+                    {% for game in all_games %}
+                        <option value="{{ game }}" {% if game == selected_game %}selected{% endif %}>{{ game }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">Apply Filter</button>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">Revenue by Region and Game Type</div>
+                    <div class="card-body">
+                        {{ bar_html|safe }}
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">Revenue Distribution by Game Type</div>
+                    <div class="card-body">
+                        {{ pie_html|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Bootstrap JS (Optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
