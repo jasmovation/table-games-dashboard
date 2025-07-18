@@ -13,15 +13,19 @@ A SaaS-style dashboard built with **Flask**, **Plotly**, and **Bootstrap**. This
 
 ## 📂 Folder Structure
 
+```text
 table-games-dashboard/
-├── app.py # Flask web app
-├── data_utils.py # Data loading & transformation
+├── app.py                 # Flask web app
+├── data_utils.py          # Data loading & transformation
 ├── generate_table_data.py # Generates fake table game data
-├── table_games_data.csv # Output data for the dashboard
+├── table_games_data.csv   # Output data for the dashboard
 ├── templates/
-│ └── index.html # HTML page (Jinja2 template)
-├── static/ # (Optional: add CSS or JS here)
-└── requirements.txt # Python dependencies
+│   └── index.html         # HTML page (Jinja2 template)
+├── static/                # (Optional: add CSS or JS here)
+├── images/
+│   └── dashboard-preview.png # Screenshot for README
+└── requirements.txt       # Python dependencies
+
 
 ## 🧪 Demo
 
