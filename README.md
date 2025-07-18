@@ -30,4 +30,4 @@ table-games-dashboard/
 ## 🧪 Demo
 
 ![Dashboard Preview](images/dashboard-preview.png)
-HEAD<img width="1300" height="679" alt="dashboard-preview" src="https://github.com/user-attachments/assets/6b605298-40da-46a1-ae1f-97101b9506a2" />
+
