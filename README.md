@@ -29,6 +29,6 @@ table-games-dashboard/
 
 ## 🧪 Demo
 
-<img src="https://raw.githubusercontent.com/jasmovation/table-games-dashboard/main/images/dashboard-preview.png" width="800" />
+<img src="https://raw.githubusercontent.com/jasmovation/table-games-dashboard/images/dashboard-preview.png" width="800" />
 
 
